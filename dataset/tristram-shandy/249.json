@@ -1,0 +1,128 @@
+{
+    "original": {
+        "text": "----But for heaven's sake, let us not talk of quarts or gallons----let us take the story straight before us; it is so nice and intricate a one, it will scarce bear the transposition of a single tittle; and, somehow or other, you have got me thrust almost into the middle of it--\n--I beg we may take more care.",
+        "paragraph_chars": [
+            [
+                0,
+                279
+            ],
+            [
+                279,
+                309
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                279
+            ],
+            [
+                279,
+                309
+            ]
+        ],
+        "overlap_chars": [
+            [
+                4,
+                63
+            ],
+            [
+                67,
+                117
+            ],
+            [
+                127,
+                163
+            ],
+            [
+                182,
+                184
+            ],
+            [
+                200,
+                247
+            ],
+            [
+                255,
+                276
+            ],
+            [
+                281,
+                309
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                279
+            ],
+            [
+                279,
+                309
+            ]
+        ]
+    },
+    "abridged": {
+        "text": "But for heaven's sake, let us not talk of quarts or gallons - let us take the story straight before us; it is so intricate a one, it will scarce bear any part being out of place; and, somehow or other, you have got me thrust into the middle of it-\n- I beg we may take more care.",
+        "paragraph_chars": [
+            [
+                0,
+                248
+            ],
+            [
+                248,
+                278
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                248
+            ],
+            [
+                248,
+                278
+            ]
+        ],
+        "overlap_chars": [
+            [
+                0,
+                59
+            ],
+            [
+                62,
+                112
+            ],
+            [
+                113,
+                149
+            ],
+            [
+                169,
+                171
+            ],
+            [
+                177,
+                224
+            ],
+            [
+                225,
+                246
+            ],
+            [
+                250,
+                278
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                248
+            ],
+            [
+                248,
+                278
+            ]
+        ]
+    }
+}

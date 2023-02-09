@@ -1,0 +1,72 @@
+{
+    "original": {
+        "text": "----I'll put him, however, into breeches, said my father, --let the world say what it will.",
+        "paragraph_chars": [
+            [
+                0,
+                91
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                91
+            ]
+        ],
+        "overlap_chars": [
+            [
+                4,
+                40
+            ],
+            [
+                42,
+                57
+            ],
+            [
+                60,
+                90
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                91
+            ]
+        ]
+    },
+    "abridged": {
+        "text": "'I'll put him, however, into breeches,' said my father, 'let the world say what it will.'",
+        "paragraph_chars": [
+            [
+                0,
+                89
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                89
+            ]
+        ],
+        "overlap_chars": [
+            [
+                1,
+                37
+            ],
+            [
+                40,
+                55
+            ],
+            [
+                57,
+                87
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                89
+            ]
+        ]
+    }
+}

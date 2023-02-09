@@ -1,0 +1,88 @@
+{
+    "original": {
+        "text": "----My uncle _Toby_ went to his bureau, --put his purse into his breeches pocket, and having ordered the corporal to go early in the morning for a physician, --he went to bed, and fell asleep.",
+        "paragraph_chars": [
+            [
+                0,
+                192
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                192
+            ]
+        ],
+        "overlap_chars": [
+            [
+                4,
+                12
+            ],
+            [
+                20,
+                39
+            ],
+            [
+                42,
+                146
+            ],
+            [
+                156,
+                157
+            ],
+            [
+                160,
+                192
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                192
+            ]
+        ]
+    },
+    "abridged": {
+        "text": "My uncle Toby went to his bureau, put his purse into his breeches pocket, and having ordered the corporal to go early in the morning for a doctor, - he went to bed, and fell asleep.",
+        "paragraph_chars": [
+            [
+                0,
+                181
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                181
+            ]
+        ],
+        "overlap_chars": [
+            [
+                0,
+                8
+            ],
+            [
+                14,
+                33
+            ],
+            [
+                34,
+                138
+            ],
+            [
+                145,
+                146
+            ],
+            [
+                149,
+                181
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                181
+            ]
+        ]
+    }
+}

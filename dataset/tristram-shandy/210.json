@@ -1,0 +1,88 @@
+{
+    "original": {
+        "text": "What a vast advantage is travelling! only it heats one; but there is a remedy for that, which you may pick out of the next chapter.",
+        "paragraph_chars": [
+            [
+                0,
+                131
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                37
+            ],
+            [
+                37,
+                131
+            ]
+        ],
+        "overlap_chars": [
+            [
+                0,
+                37
+            ],
+            [
+                37,
+                97
+            ],
+            [
+                102,
+                131
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                37
+            ],
+            [
+                37,
+                131
+            ]
+        ]
+    },
+    "abridged": {
+        "text": "What a vast advantage is travelling! only it heats one; but there is a remedy for that, which you will pick out of the next chapter.",
+        "paragraph_chars": [
+            [
+                0,
+                132
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                37
+            ],
+            [
+                37,
+                132
+            ]
+        ],
+        "overlap_chars": [
+            [
+                0,
+                37
+            ],
+            [
+                37,
+                97
+            ],
+            [
+                103,
+                132
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                37
+            ],
+            [
+                37,
+                132
+            ]
+        ]
+    }
+}

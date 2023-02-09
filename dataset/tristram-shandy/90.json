@@ -1,0 +1,56 @@
+{
+    "original": {
+        "text": "Is this a fit time, said my father to himself, to talk of PENSIONS and GRENADIERS?",
+        "paragraph_chars": [
+            [
+                0,
+                82
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                82
+            ]
+        ],
+        "overlap_chars": [
+            [
+                0,
+                82
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                82
+            ]
+        ]
+    },
+    "abridged": {
+        "text": "Is this a fit time, said my father to himself, to talk of Pensions and Grenadiers?",
+        "paragraph_chars": [
+            [
+                0,
+                82
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                82
+            ]
+        ],
+        "overlap_chars": [
+            [
+                0,
+                82
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                82
+            ]
+        ]
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "original": {
+        "text": "My uncle _Toby's_ Map is carried down into the kitchen.",
+        "paragraph_chars": [
+            [
+                0,
+                55
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                55
+            ]
+        ],
+        "overlap_chars": [
+            [
+                0,
+                8
+            ],
+            [
+                14,
+                16
+            ],
+            [
+                18,
+                55
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                55
+            ]
+        ]
+    },
+    "abridged": {
+        "text": "My uncle Toby's Map is carried down into the kitchen.",
+        "paragraph_chars": [
+            [
+                0,
+                53
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                53
+            ]
+        ],
+        "overlap_chars": [
+            [
+                0,
+                8
+            ],
+            [
+                13,
+                15
+            ],
+            [
+                16,
+                53
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                53
+            ]
+        ]
+    }
+}

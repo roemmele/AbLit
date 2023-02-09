@@ -1,0 +1,104 @@
+{
+    "original": {
+        "text": "----Thou wilt get a brush and a little chalk to my sword----'Twill be only in your honour's way, replied _Trim_.",
+        "paragraph_chars": [
+            [
+                0,
+                112
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                112
+            ]
+        ],
+        "overlap_chars": [
+            [
+                9,
+                56
+            ],
+            [
+                61,
+                66
+            ],
+            [
+                70,
+                74
+            ],
+            [
+                67,
+                69
+            ],
+            [
+                75,
+                95
+            ],
+            [
+                97,
+                104
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                112
+            ]
+        ]
+    },
+    "abridged": {
+        "text": "'Thou wilt get a brush and a little chalk to my sword.'\n''Twill only be in your honour's way,' replied Trim.",
+        "paragraph_chars": [
+            [
+                0,
+                56
+            ],
+            [
+                56,
+                108
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                56
+            ],
+            [
+                56,
+                108
+            ]
+        ],
+        "overlap_chars": [
+            [
+                6,
+                53
+            ],
+            [
+                58,
+                63
+            ],
+            [
+                64,
+                68
+            ],
+            [
+                69,
+                71
+            ],
+            [
+                72,
+                92
+            ],
+            [
+                95,
+                102
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                108
+            ]
+        ]
+    }
+}

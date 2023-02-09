@@ -1,0 +1,96 @@
+{
+    "original": {
+        "text": "----\"Not touch it for the world,\" did I say----\nLord, how I have heated my imagination with this metaphor!",
+        "paragraph_chars": [
+            [
+                0,
+                48
+            ],
+            [
+                48,
+                106
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                48
+            ],
+            [
+                48,
+                106
+            ]
+        ],
+        "overlap_chars": [
+            [
+                5,
+                31
+            ],
+            [
+                34,
+                43
+            ],
+            [
+                48,
+                106
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                48
+            ],
+            [
+                48,
+                106
+            ]
+        ]
+    },
+    "abridged": {
+        "text": "'Not touch it for the world,' did I say-\nLord, how I have heated my imagination with this metaphor!",
+        "paragraph_chars": [
+            [
+                0,
+                41
+            ],
+            [
+                41,
+                99
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                41
+            ],
+            [
+                41,
+                99
+            ]
+        ],
+        "overlap_chars": [
+            [
+                1,
+                27
+            ],
+            [
+                30,
+                39
+            ],
+            [
+                41,
+                99
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                41
+            ],
+            [
+                41,
+                99
+            ]
+        ]
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "original": {
+        "text": "Doctor _Slop_ and _Susannah_ filed cross-bills against each other in the parlour; which done, as the cataplasm had failed, they retired into the kitchen to prepare a fomentation for me; --and whilst that was doing, my father determined the point as you will read.",
+        "paragraph_chars": [
+            [
+                0,
+                263
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                263
+            ]
+        ],
+        "overlap_chars": [
+            [
+                92,
+                122
+            ],
+            [
+                8,
+                12
+            ],
+            [
+                14,
+                17
+            ],
+            [
+                22,
+                27
+            ],
+            [
+                128,
+                185
+            ],
+            [
+                188,
+                191
+            ],
+            [
+                213,
+                224
+            ],
+            [
+                236,
+                263
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                263
+            ]
+        ]
+    },
+    "abridged": {
+        "text": "After this, as the cataplasm had failed, Dr. Slop and Susannah retired into the kitchen to prepare a fomentation for me; and meanwhile, my father decided the point as you will read.",
+        "paragraph_chars": [
+            [
+                0,
+                181
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                181
+            ]
+        ],
+        "overlap_chars": [
+            [
+                10,
+                40
+            ],
+            [
+                45,
+                49
+            ],
+            [
+                50,
+                53
+            ],
+            [
+                57,
+                62
+            ],
+            [
+                63,
+                120
+            ],
+            [
+                121,
+                124
+            ],
+            [
+                134,
+                145
+            ],
+            [
+                154,
+                181
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                181
+            ]
+        ]
+    }
+}

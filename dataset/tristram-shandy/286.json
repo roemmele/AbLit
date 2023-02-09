@@ -1,0 +1,72 @@
+{
+    "original": {
+        "text": "Now, for what the world thinks of that ejaculation ----I would not give a groat.",
+        "paragraph_chars": [
+            [
+                0,
+                80
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                80
+            ]
+        ],
+        "overlap_chars": [
+            [
+                0,
+                50
+            ],
+            [
+                55,
+                73
+            ],
+            [
+                79,
+                80
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                80
+            ]
+        ]
+    },
+    "abridged": {
+        "text": "Now, for what the world thinks of that ejaculation - I would not give a penny.",
+        "paragraph_chars": [
+            [
+                0,
+                78
+            ]
+        ],
+        "segment_chars": [
+            [
+                0,
+                78
+            ]
+        ],
+        "overlap_chars": [
+            [
+                0,
+                50
+            ],
+            [
+                53,
+                71
+            ],
+            [
+                77,
+                78
+            ]
+        ],
+        "row_chars": [
+            [
+                0,
+                78
+            ]
+        ]
+    }
+}
