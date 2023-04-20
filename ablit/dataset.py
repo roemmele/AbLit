@@ -778,7 +778,7 @@ class Chunk(Passage):
 class Sentence(Passage):
 
     def __repr__(self):
-        return '''sentence(
+        return '''Sentence(
         idx={},
         original_start_char={},
         original_end_char={},
