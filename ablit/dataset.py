@@ -91,8 +91,6 @@ class VersionChapter():
 
             while (len(chunk_chars) > 1
                    and len(chunk_chars[-1]) < merge_n_sentences):
-                # import pdb
-                # pdb.set_trace()
                 fin_chars = chunk_chars.pop(-1)
                 fin_pars_i = chunk_pars_i.pop(-1)
                 fin_n_segs = chunk_n_segs.pop(-1)

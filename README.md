@@ -3,11 +3,13 @@
 
 This repo contains the data and code featured in the paper "ABLIT: A Resource for Analyzing and Generating Abridged Versions of English Literature". The author Emma Laybourn wrote [abridged versions of 10 classic books](http://www.englishliteratureebooks.com/classicnovelsabridged.html). AbLit annotates the alignment between passages in these abridgements with their original version.
 
-#### Because AbLit can provide aligned passages of different lengths (e.g. sentences, paragraphs, multi-paragraph chunks), we've provided a python package for interfacing with the data (called ablit). You can use this code to extract and save the data for different passage sizes to file.
+#### The dataset is now available on HuggingFace datasets: [huggingface.co/datasets/roemmele/ablit](https://huggingface.co/datasets/roemmele/ablit). 
+
+#### Alternatively, you can access the data directly from this repo. Because AbLit can provide aligned passages of different lengths (e.g. sentences, paragraphs, multi-paragraph chunks), we've provided a python package for interfacing with the data (called ablit). You can use this code to extract and save the data for different passage sizes to file.
 
 The raw data is in the dataset/ folder.
 
-To load the package from anywhere, do "pip install ." in this directory.
+To install ablit as a package and load it from anywhere, do "pip install ." in the top level of the repo.
 
 
 ```python
@@ -140,7 +142,7 @@ sentences[0]
 
 
 
-    sentence(
+    Sentence(
             idx=0,
             original_start_char=0,
             original_end_char=108,
@@ -322,7 +324,7 @@ pandas.options.display.max_colwidth = None
 from ablit import AblitDataset
 
 dataset = AblitDataset(dirpath='./dataset',
-                       partition='dev')
+                       partition="dev")
 ```
 
 
@@ -330,45 +332,31 @@ dataset = AblitDataset(dirpath='./dataset',
 dataframe = []
 for book in dataset.books:
     for chapter in book.chapters:
-        ''' Pick your passage type, e.g.:
+        ''' Pick your passage type, e.g.:'''
+#         for passage in chapter.rows:
+#         for passage in chapter.paragraphs:
+#         for passage in chapter.chunks(merge_n_sentences=None, max_n_sentences=10):
         for passage in chapter.sentences:
-        for passage in chapter.paragraphs:
-        for passage in chapter.chunks(merge_n_sentences=None, max_n_sentences=10):
-        '''
-        for passage in chapter.rows:
-            dataframe.append({'original': passage.original, 
-                              'abridged': passage.abridged})
+            dataframe.append({'original': passage.original,
+                              'abridged': passage.abridged,
+                              'book': book.book_title,
+                              'chapter': chapter.chapter_title})
 dataframe = pandas.DataFrame(dataframe)
-```
-
-
-```python
-dataframe #Save this file, e.g. "dataframe.to_csv(your_filename.csv)"
+dataframe
 ```
 
 
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
       <th>original</th>
       <th>abridged</th>
+      <th>book</th>
+      <th>chapter</th>
     </tr>
   </thead>
   <tbody>
@@ -376,60 +364,93 @@ dataframe #Save this file, e.g. "dataframe.to_csv(your_filename.csv)"
       <th>0</th>
       <td>A Chancery judge once had the kindness to inform me, as one of a company of some hundred and fifty men and women not labouring under any suspicions of lunacy, that the Court of Chancery, though the shining subject of much popular prejudice (at which point I thought the judge's eye had a cast in my direction), was almost immaculate.</td>
       <td></td>
+      <td>Bleak House</td>
+      <td>Preface</td>
     </tr>
     <tr>
       <th>1</th>
       <td>There had been, he admitted, a trivial blemish or so in its rate of progress, but this was exaggerated and had been entirely owing to the "parsimony of the public," which guilty public, it appeared, had been until lately bent in the most determined manner on by no means enlarging the number of Chancery judges appointed--I believe by Richard the Second, but any other king will do as well.\n</td>
       <td></td>
+      <td>Bleak House</td>
+      <td>Preface</td>
     </tr>
     <tr>
       <th>2</th>
       <td>This seemed to me too profound a joke to be inserted in the body of this book or I should have restored it to Conversation Kenge or to Mr. Vholes, with one or other of whom I think it must have originated.</td>
       <td></td>
+      <td>Bleak House</td>
+      <td>Preface</td>
     </tr>
     <tr>
       <th>3</th>
       <td>In such mouths I might have coupled it with an apt quotation from one of Shakespeare's sonnets:\n</td>
       <td></td>
+      <td>Bleak House</td>
+      <td>Preface</td>
     </tr>
     <tr>
       <th>4</th>
       <td>"My nature is subdued To what it works in, like the dyer's hand: Pity me, then, and wish I were renewed!"\n</td>
       <td></td>
+      <td>Bleak House</td>
+      <td>Preface</td>
     </tr>
     <tr>
       <th>...</th>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>1068</th>
+      <th>1138</th>
       <td>He-probably swayed by prudential consideration of the folly of offending a good tenant-relaxed a little in the laconic style of chipping off his pronouns and auxiliary verbs, and introduced what he supposed would be a subject of interest to me,-a discourse on the advantages and disadvantages of my present place of retirement.</td>
       <td>Probably not wishing to offend a good tenant, he began to talk less curtly, discussing the advantages and disadvantages of my new house.</td>
+      <td>Wuthering Heights</td>
+      <td>Chapter 1</td>
     </tr>
     <tr>
-      <th>1069</th>
+      <th>1139</th>
       <td>I found him very intelligent on the topics we touched; and before I went home, I was encouraged so far as to volunteer another visit to-morrow.</td>
       <td>I found him very intelligent on these topics; and before I went home, I offered to visit him tomorrow.</td>
+      <td>Wuthering Heights</td>
+      <td>Chapter 1</td>
     </tr>
     <tr>
-      <th>1070</th>
+      <th>1140</th>
       <td>He evidently wished no repetition of my intrusion.</td>
       <td>He did not seem to wish for it.</td>
+      <td>Wuthering Heights</td>
+      <td>Chapter 1</td>
     </tr>
     <tr>
-      <th>1071</th>
+      <th>1141</th>
       <td>I shall go, notwithstanding.</td>
       <td>I shall go, all the same.</td>
+      <td>Wuthering Heights</td>
+      <td>Chapter 1</td>
     </tr>
     <tr>
-      <th>1072</th>
+      <th>1142</th>
       <td>It is astonishing how sociable I feel myself compared with him.</td>
       <td>It is astonishing how sociable I feel compared with him.</td>
+      <td>Wuthering Heights</td>
+      <td>Chapter 1</td>
     </tr>
   </tbody>
 </table>
-<p>1073 rows × 2 columns</p>
+<p>1143 rows × 4 columns</p>
 </div>
 
 
+
+
+```python
+# Save the dataset, e.g.:
+# dataframe.to_json("my_dataset.jsonl", orient='records', lines=True)
+```
+
+
+```python
+
+```
