@@ -309,9 +309,9 @@ paragraphs[4].overlaps
 
 
 
-#### Extract a spreadsheet of aligned passages
+#### Extract a full dataset of aligned passages
 
-It's easy to produce a spreadsheet with the aligned original and abridged passages of whatever size you want, and save it as a file that you can load in your experiments. Just select the data partition you want to extract, then specify the attribute for your desired passage type while looping through all the books/chapters, as shown below.
+It's easy to produce a list with the aligned original and abridged passages of whatever size you want, and save it as a file that you can load in your experiments. Just select the data partition you want to extract, then specify the attribute for your desired passage type while looping through all the books/chapters, as shown below.
 
 
 ```python
@@ -349,6 +349,19 @@ dataframe
 
 
 <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
