@@ -1,9 +1,9 @@
 # AbLit: *Ab*ridged versions of English *Lit*erature books
 
 
-This repo contains the data and code featured in the paper "ABLIT: A Resource for Analyzing and Generating Abridged Versions of English Literature". The author Emma Laybourn wrote [abridged versions of 10 classic books](http://www.englishliteratureebooks.com/classicnovelsabridged.html). AbLit annotates the alignment between passages in these abridgements with their original version.
+This repo contains the data and code featured in the paper [AbLit: A Resource for Analyzing and Generating Abridged Versions of English Literature](https://arxiv.org/pdf/2302.06579.pdf). The author Emma Laybourn wrote [abridged versions of 10 classic books](http://www.englishliteratureebooks.com/classicnovelsabridged.html). AbLit annotates the alignment between passages in these abridgements with their original version.
 
-#### The dataset is now available on HuggingFace datasets: [huggingface.co/datasets/roemmele/ablit](https://huggingface.co/datasets/roemmele/ablit). 
+#### The dataset is now available on HuggingFace datasets: [huggingface.co/datasets/roemmele/ablit](https://huggingface.co/datasets/roemmele/ablit). (There is also an abridgement generation model available on the [Hub](https://huggingface.co/roemmele/ablit-bart-base), which is initialized from bart-base and fine-tuned on the AbLit dataset, as described in the paper.)
 
 #### Alternatively, you can access the data directly from this repo. Because AbLit can provide aligned passages of different lengths (e.g. sentences, paragraphs, multi-paragraph chunks), we've provided a python package for interfacing with the data (called ablit). You can use this code to extract and save the data for different passage sizes to file.
 
