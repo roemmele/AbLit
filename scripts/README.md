@@ -2,20 +2,22 @@ This directory contains code used to create the dataset and conduct the experime
 
 ## Creating the aligned dataset
 
-Here are the steps we took for automatically producing aligned rows of original and abridged spans:
+Below are the steps we took for automatically producing aligned rows of original and abridged spans.
 
-### Install the library dependencies: 
+### Install the library dependencies
 
 ```pip install -r requirements.txt```
 
-### Download the original and abridged book chapters [here](https://drive.google.com/file/d/1AV_DQfMvTw0TCpcSHWdc0riP6WiPOaKS/view?usp=sharing).
+### Download the original and abridged book chapters [here](https://drive.google.com/file/d/1AV_DQfMvTw0TCpcSHWdc0riP6WiPOaKS/view?usp=sharing)
 
-### Split the chapters into sentence segments:
+### Split the chapters into sentence segments
 ```
 python dataset_creation/split_segments.py -in_dir chapters/ -out_dir sentences/ -meta_data_file chapters/meta_data.json
 ```
 
-### Run the alignment algorithm on the segmented data:
+### Run the alignment algorithm on the segmented data
+
+##### Alternative 1 (our approach):
 
 ```
 python dataset_creation/align.py -scoring_method string -segments_in_dir sentences/ -meta_data_file chapters/meta_data.json -out_dir rows/ -size_penalty 0.175
@@ -23,26 +25,28 @@ python dataset_creation/align.py -scoring_method string -segments_in_dir sentenc
 
 This will use the ROUGE (string overlap) scoring method for alignment, which is the method that obtained the best result as reported in the paper. See the paper for a description of the size_penalty parameter.
 
-#### Alternatively, this script can also apply a vector-based scoring method, which applies a vector embedding model (e.g. BERT) to encode segments, then aligns them based on vector similarity:*
+align.py creates two directories in out_dir/: "json" contains the .json version of the aligned rows and "sheets" are .csv versions of the rows that we uploaded to Google Sheets for the human validation procedure.
 
-<sub>First transform the segments into vectors (you can use any HuggingFace model that produces embeddings, e.g. bert-based-uncased):</sub>
+##### Alternative 2 (lower alignment accuracy than Alternative 1 for this dataset):
+
+You can also apply a vector-based scoring method, which applies a vector embedding model (e.g. BERT) to encode segments, then aligns them based on vector similarity:
+
+First transform the segments into vectors (you can use any HuggingFace model that produces embeddings, e.g. bert-based-uncased):
 
 ```
 python dataset_creation/transform.py -in_dir sentences/ -out_dir vectors/ -meta_data_file chapters/meta_data.json -vectorizer bert-base-uncased
 ```
 
-<sub>Then run alignment:</sub>
+Then run alignment:
 ```
 python dataset_creation/align.py -scoring_method vector -segments_in_dir sentences/ -vectors_in_dir vectors/ -meta_data_file chapters/meta_data.json -out_dir rows/ -size_penalty 0.21
 ```
-
-align.py creates two directories in out_dir/: "json" contains the .json version of the aligned rows and "sheets" are .csv versions of the rows that we uploaded to Google Sheets for the human validation procedure.
 
 ### Validation
 
 The paper describes the procedure we used for estimating the alignment accuracy and engaging human effort to correct erroneously aligned rows. Annotators used Google Sheets to edit the spreadsheet (.csv) files produced by the align.py script. The resulting files were then downloaded and converted back into .json files via the process_validation_sheets.py script.
 
-### Evaluating the alignments
+##### Evaluating the alignments
 
 We evaluated the accuracy of the automatically produced aligned rows by comparing them with human-validated rows. Given predicted and validated (gold) rows in the same format as rows/json, you can run the alignment accuracy metric described in the paper:
 
@@ -57,7 +61,6 @@ python dataset_creation/pack_final_dataset.py -in_dir rows/json -out_dir dataset
 ```
 
 The -assign_partition parameter creates the train/dev/test split for the data.
-
 
 ### Get dataset stats
 
